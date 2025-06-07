@@ -25,4 +25,17 @@ class PrincipalController extends Controller
     {
         return view('site.departamentos');
     }
+    
+    public function termos()
+    {
+        return view('site.termos');
+    }
+    public function politica()
+    {
+        return view('site.politica');
+    }
+    public function sobre()
+    {
+        return view('site.sobre');
+    }
 }

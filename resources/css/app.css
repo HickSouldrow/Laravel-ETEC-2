@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "tailwindcss";
-@source "../views";
+
+
 
 body,
 html {
@@ -90,5 +90,10 @@ html {
 
     body {
         @apply bg-background text-foreground;
+    }
+}
+@layer base {
+    .border-border {
+        border-color: hsl(var(--border));
     }
 }
