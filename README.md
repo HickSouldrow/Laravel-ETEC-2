@@ -1,3 +1,118 @@
+# Laravel Breeze Installation Guide – Laravel-ETEC-2
+
+## ⚙️ PHP Extensions Setup
+
+Before installing, open the `php.ini` file in the `xampp/php` directory and **remove the semicolon (`;`)** from the following extensions:
+
+```ini
+;extension=ffi  
+;extension=ftp  
+;extension=zip  
+```
+
+Make sure they are enabled (remove the `;`).
+
+---
+
+## 🛠️ Required Tools
+
+Make sure the following are installed:
+- [Composer](https://getcomposer.org/)
+- [Laravel Installer](https://laravel.com/docs/installation)
+- [Node.js](https://nodejs.org/)
+- [XAMPP](https://www.apachefriends.org/)
+
+Install the Laravel installer globally:
+
+```bash
+composer global require laravel/installer
+```
+
+---
+
+## 🚀 Project Setup
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/HickSouldrow/Laravel-ETEC-2
+cd Laravel-ETEC-2
+```
+
+2. **Install dependencies:**
+
+```bash
+npm install
+composer install
+```
+
+3. **Set up the environment file:**
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+4. **Run migrations:**
+
+```bash
+php artisan migrate
+```
+
+---
+
+## 🌐 Laravel Breeze Installation
+
+1. **Install Breeze via Composer:**
+
+```bash
+composer require laravel/breeze --dev
+```
+
+2. **Run Breeze installer:**  
+(Choose "blade", "yes", and "phpunit" when prompted)
+
+```bash
+php artisan breeze:install
+```
+
+3. **Run migrations again (if needed):**
+
+```bash
+php artisan migrate
+```
+
+4. **Compile front-end assets:**
+
+```bash
+npm run dev
+```
+
+(Leave the terminal open while it compiles; it watches for changes.)
+
+---
+
+## ✅ Run the Application
+
+Finally, start the Laravel server:
+
+```bash
+php artisan serve
+```
+
+Open the URL shown (usually `http://127.0.0.1:8000`) to access the project.
+
+---
+
+## 📌 Repository
+
+[GitHub – Laravel-ETEC-2](https://github.com/HickSouldrow/Laravel-ETEC-2)
+
+---
+
+Feel free to modify or expand this README as needed.
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
