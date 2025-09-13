@@ -18,7 +18,9 @@ class PrincipalController extends Controller
 
     public function contato()
     {
-        return view('site.contato');
+        
+        var_dump($_GET); // vai mostrar na url os dados armazenandos no formulario
+        return view('site.contato', ['titulo' => 'Contato (teste)']);
     }
 
     public function departamentos()

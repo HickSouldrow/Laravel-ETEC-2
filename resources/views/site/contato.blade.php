@@ -186,45 +186,56 @@
                                 </div>
                             </div>
                         </div>
+<!-- Contact Form -->
+<div class="bg-gray-50 rounded-lg shadow-md p-6 contact-card">
+    <h2 class="text-2xl font-bold text-red-700 mb-6">Envie uma Mensagem</h2>
+    
+    <form action="{{ route('site.contato') }}" method="get" class="space-y-4">
+        <div>
+            <label for="name" class="block text-gray-700 font-medium mb-1">Nome</label>
+            <input name="nome" type="text" id="name" placeholder="Seu nome"
+                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+        </div>
+        
+        <div>
+            <label for="telefone" class="block text-gray-700 font-medium mb-1">Telefone</label>
+            <input name="telefone" type="text" id="telefone" placeholder="(11) 99999-9999"
+                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+        </div>
 
-                        <!-- Contact Form -->
-                        <div class="bg-gray-50 rounded-lg shadow-md p-6 contact-card">
-                            <h2 class="text-2xl font-bold text-red-700 mb-6">Envie uma Mensagem</h2>
-                            
-                            <form class="space-y-4">
-                                <div>
-                                    <label for="name" class="block text-gray-700 font-medium mb-1">Nome</label>
-                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
-                                </div>
-                                
-                                <div>
-                                    <label for="email" class="block text-gray-700 font-medium mb-1">E-mail</label>
-                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
-                                </div>
-                                
-                                <div>
-                                    <label for="subject" class="block text-gray-700 font-medium mb-1">Assunto</label>
-                                    <select id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
-                                        <option value="">Selecione um assunto</option>
-                                        <option value="admission">Processo Seletivo</option>
-                                        <option value="courses">Informações sobre Cursos</option>
-                                        <option value="complaint">Reclamação</option>
-                                        <option value="suggestion">Sugestão</option>
-                                        <option value="other">Outro</option>
-                                    </select>
-                                </div>
-                                
-                                <div>
-                                    <label for="message" class="block text-gray-700 font-medium mb-1">Mensagem</label>
-                                    <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
-                                </div>
-                                
-                                <button type="submit" class="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 transition duration-300 font-medium">
-                                    Enviar Mensagem
-                                </button>
-                            </form>
-                        </div>
-                    </div>
+        <div>
+            <label for="email" class="block text-gray-700 font-medium mb-1">E-mail</label>
+            <input name="email" type="email" id="email" placeholder="seuemail@exemplo.com"
+                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+        </div>
+        
+        <div>
+            <label for="motivo_contato" class="block text-gray-700 font-medium mb-1">Assunto</label>
+            <select name="motivo_contato" id="motivo_contato"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                <option value="">Selecione um assunto</option>
+                <option value="1">Dúvida</option>
+                <option value="2">Elogio</option>
+                <option value="3">Reclamação</option>
+                <option value="4">Sugestão</option>
+                <option value="5">Outro</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="mensagem" class="block text-gray-700 font-medium mb-1">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" rows="4"
+                      class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+            >Preencha aqui a sua mensagem</textarea>
+        </div>
+        
+        <button type="submit"
+                class="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 transition duration-300 font-medium">
+            Enviar Mensagem
+        </button>
+    </form>
+      </div>
+      </div>
 
                     <!-- Map Section -->
                     <div class="mt-12 bg-gray-50 rounded-lg shadow-md overflow-hidden contact-card">
