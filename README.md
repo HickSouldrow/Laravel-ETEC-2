@@ -1,16 +1,20 @@
-# Laravel Breeze Installation Guide – Laravel-ETEC-2
-
 ## UPDATE - VAR_DUMP() and Fallback
 <br>
 1. VAR_DUMP()
+
 <img width="1203" height="592" alt="image" src="https://github.com/user-attachments/assets/4237fb90-883a-43f2-8d9f-ec2a1bada3da" />
+<br>
 <img width="1305" height="675" alt="image" src="https://github.com/user-attachments/assets/8aabeb9f-f7d6-41ed-89f5-bf1fb04ab4d3" />
 
 <br><br>
 2.Fallback
+<br>
 <img width="1210" height="627" alt="image" src="https://github.com/user-attachments/assets/ad92b0c1-6353-48d8-9f5d-049e43341c4b" />
+<br>
 <img width="976" height="265" alt="image" src="https://github.com/user-attachments/assets/574adf1f-5cf4-45c2-a21f-2b289840382a" />
 <br>
+# Laravel Breeze Installation Guide – Laravel-ETEC-2
+
 ## ⚙️ PHP Extensions Setup
 
 Before installing, open the `php.ini` file in the `xampp/php` directory and **remove the semicolon (`;`)** from the following extensions:
